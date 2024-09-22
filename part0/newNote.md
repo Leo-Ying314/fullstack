@@ -22,12 +22,7 @@ sequenceDiagram
 
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
   activate server
-  server->>browser: [
-    {
-        "content": "",
-        "date": "2024-09-22T14:05:10.104Z"
-    },...
-    ]
+  server->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
   deactivate server
 
   browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
@@ -49,11 +44,6 @@ sequenceDiagram
 
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
   activate server
-  server->>browser: [
-    {
-        "content": "You look great",
-        "date": "2024-09-22T14:11:47.914Z"
-    },...
-    ]
+  server->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
   deactivate server
 ```
